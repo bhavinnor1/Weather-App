@@ -4,7 +4,7 @@ const WeatherBox = (props) => {
     return (
         <>
             <div className='title'>Check City Temperature</div>
-
+            <div className='p-10'>
             <div className="weather-box" style={{ background: 'orangered' }}>
                 <input type="text" value={props.city} onChange={props.handleChange} />
                 <div className="data">
@@ -17,6 +17,7 @@ const WeatherBox = (props) => {
                     <div>Humidity:</div>
                     <div>{props.humidity}</div>
                 </div>
+            </div>
             </div>
         </>
     )
