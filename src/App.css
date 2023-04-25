@@ -12,6 +12,10 @@ body {
   background-color: rgb(47, 41, 41);
 }
 
+.p-10{
+  padding: 20px;
+}
+
 .weather-box {
   border-radius: 5px;
   font-size: 20px;
