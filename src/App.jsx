@@ -18,7 +18,7 @@ function App() {
   }
   useEffect(() => {
     const FetchApi = async () => {
-      let response = await fetch(`https://api.weatherapi.com/v1/current.json?key=a258f876bc964407a3c92637233103&aqi=no&q=${city}`);
+      let response = await fetch(`https://api.weatherapi.com/v1/current.json?key=${import.meta.env.VITE_API_KEY}&aqi=no&q=${city}`);
       let data = await response.json();
       console.log(data);
       if (data.error) {
