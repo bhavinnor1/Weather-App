@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react'
 import './App.css'
 import WeatherBox from './components/WeatherBox'
-import axios from 'axios';
 
 function App() {
   const [city, setCity] = useState('Mumbai');
